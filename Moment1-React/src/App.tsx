@@ -39,7 +39,9 @@ function App() {
      <img src="/banner.jpg"/>
 
      <div className='card-container'>
-      <Card martialArt={'Karate'} info={'Karate'}/>
+      {martialArtArray.map((c, i) => (
+        <Card martialArt={c.martialArt} info={c.info} key={i}/>
+      ))}
      </div>
      <footer>Av Haris Sabanovic</footer>
     </>
