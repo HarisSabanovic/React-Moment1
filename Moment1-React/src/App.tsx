@@ -1,9 +1,9 @@
 import './App.css'
 import Card from './components/Card';
+import Header from './components/Header';
 
 
 function App() {
-  const pageTitle = "Kampsporter";
 
   const martialArtArray = [
     {
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-     <h1>{pageTitle}</h1>
+     <Header title="Kampsporter"/>
 
      <img src="/banner.jpg"/>
 
